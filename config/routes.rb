@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :publishing_houses
   resources :authors
   mount_ember_app :frontend, to: "/"
+  mount Knock::Engine => "/knock"
 end

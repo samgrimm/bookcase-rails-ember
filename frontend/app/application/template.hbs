@@ -1,6 +1,9 @@
 <h2 id="title">
   {{link-to "Our Awesome Bookstore" 'books'}}
 </h2>
+
+    <a {{action 'invalidateSession'}}>Logout</a>
+
 <div class="{{if blur 'blur-background' ''}}">
   {{outlet}}
 </div>

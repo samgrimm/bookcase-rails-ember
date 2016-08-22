@@ -1,5 +1,6 @@
 class PublishingHousesController < ApplicationController
   before_action :set_publishing_house, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user
 
   # GET /publishing_houses
  def index
